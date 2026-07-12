@@ -178,3 +178,167 @@ header span {
         transform: translateX(-50%);
     }
 }
+
+/* Premium living-tree redesign */
+
+.tree-scene {
+    width: min(100%, 860px);
+    min-height: 760px;
+}
+
+.living-tree {
+    inset: auto 0 0;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    overflow: visible;
+}
+
+.tree-form {
+    filter: drop-shadow(0 18px 16px rgba(0, 0, 0, 0.38));
+}
+
+.trunk-shape,
+.branch-shape {
+    fill: url("#trunkWood");
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: center bottom;
+    animation: woodGrow 1.5s ease forwards;
+}
+
+.trunk-shape {
+    animation-delay: 0.15s;
+}
+
+.branch-shape {
+    animation-delay: 0.9s;
+}
+
+.left-mid,
+.right-mid {
+    animation-delay: 1.15s;
+}
+
+.left-high,
+.right-high {
+    animation-delay: 1.4s;
+}
+
+.roots path,
+.twig-lines path {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 900;
+    stroke-dashoffset: 900;
+    animation: drawTree 1.5s ease forwards;
+}
+
+.roots path {
+    stroke: #3a2216;
+    stroke-width: 18;
+}
+
+.twig-lines path {
+    stroke: #6d4328;
+    stroke-width: 11;
+    animation-delay: 1.35s;
+}
+
+.canopy circle {
+    fill: url("#leafGreen");
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    filter: drop-shadow(0 0 20px rgba(74, 151, 100, 0.12));
+    animation: canopyBloom 0.8s ease forwards;
+}
+
+.canopy circle:nth-child(1) { animation-delay: 1.45s; }
+.canopy circle:nth-child(2) { animation-delay: 1.55s; }
+.canopy circle:nth-child(3) { animation-delay: 1.65s; }
+.canopy circle:nth-child(4) { animation-delay: 1.75s; }
+.canopy circle:nth-child(5) { animation-delay: 1.85s; }
+.canopy circle:nth-child(6) { animation-delay: 1.95s; }
+.canopy circle:nth-child(7) { animation-delay: 2.05s; }
+.canopy circle:nth-child(8) { animation-delay: 2.15s; }
+.canopy circle:nth-child(9) { animation-delay: 2.25s; }
+
+.light-leaves circle {
+    fill: #f1d58e;
+    opacity: 0;
+    filter: url("#softGlow");
+    animation:
+        leafLight 0.6s ease forwards,
+        leafPulse 2.4s ease-in-out infinite alternate;
+    animation-delay: 2.2s, 2.8s;
+}
+
+@keyframes woodGrow {
+    from {
+        opacity: 0;
+        transform: scaleY(0.05);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+@keyframes drawTree {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes canopyBloom {
+    from {
+        opacity: 0;
+        transform: scale(0.15);
+    }
+
+    to {
+        opacity: 0.92;
+        transform: scale(1);
+    }
+}
+
+@keyframes leafLight {
+    to {
+        opacity: 0.9;
+    }
+}
+
+@keyframes leafPulse {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding-bottom: 0;
+    }
+
+    .tree-scene {
+        min-height: 650px;
+        margin-top: -10px;
+    }
+
+    .living-tree {
+        left: 50%;
+        width: 100%;
+        min-width: 0;
+        transform: translateX(-50%);
+    }
+
+    .tree-message {
+        bottom: 16px;
+    }
+}
