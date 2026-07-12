@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+    <title>Chappell Family Tree</title>
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+<body>
+    <header>
+        <p>ChapNetAI History</p>
+        <h1>Chappell Family Tree</h1>
+        <span>Created by Brandon D. Chappell</span>
+    </header>
+
+    <main>
+        <section class="tree-scene">
+            <svg
+                class="living-tree"
+                viewBox="0 0 800 900"
+                aria-label="Animated family tree"
+            >
+                <path
+                    class="tree-line trunk"
+                    d="M400 860
+                       C380 720 425 620 400 500
+                       C380 390 410 300 400 210"
+                />
+
+                <path
+                    class="tree-line branch branch-one"
+                    d="M400 650 C330 590 250 545 150 500"
+                />
+
+                <path
+                    class="tree-line branch branch-two"
+                    d="M400 650 C470 590 550 545 650 500"
+                />
+
+                <path
+                    class="tree-line branch branch-three"
+                    d="M395 500 C315 440 245 375 180 300"
+                />
+
+                <path
+                    class="tree-line branch branch-four"
+                    d="M405 500 C485 440 555 375 620 300"
+                />
+
+                <path
+                    class="tree-line branch branch-five"
+                    d="M400 390 C345 325 310 255 290 180"
+                />
+
+                <path
+                    class="tree-line branch branch-six"
+                    d="M400 390 C455 325 490 255 510 180"
+                />
+
+                <path
+                    class="tree-line root"
+                    d="M400 850 C320 850 245 875 160 900"
+                />
+
+                <path
+                    class="tree-line root"
+                    d="M400 850 C480 850 555 875 640 900"
+                />
+
+                <path
+                    class="tree-line root"
+                    d="M400 850 C400 875 400 890 400 900"
+                />
+            </svg>
+
+            <div class="ground"></div>
+
+            <div class="tree-message">
+                <strong>Family Confirmed</strong>
+                <span>Public records will be cited separately.</span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
