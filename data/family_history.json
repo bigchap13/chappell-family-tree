@@ -448,5 +448,43 @@
       "confidence": "Low",
       "source_type": "Compiled migration comparison"
     }
+  ],
+  "branch_assessments": [
+    {
+      "name": "Robert Chappell and Agnes Cross",
+      "status": "Primary Historical Lead",
+      "reason": "Documented Virginia-to-Georgia family whose descendants include John, William, Abraham and Obadiah Chappell.",
+      "next_action": "Trace each descendant branch forward and compare probate, land, guardianship and census records against Mitchell."
+    },
+    {
+      "name": "Obadiah Chappell Branch",
+      "status": "Active Candidate",
+      "reason": "Age, geography and west-Georgia movement fit the period in which Mitchell may have entered the record.",
+      "next_action": "Locate complete Harris County estate, guardianship and court records."
+    },
+    {
+      "name": "John Chappell Branch",
+      "status": "Active Candidate",
+      "reason": "A documented Georgia branch with surviving Monroe County probate records.",
+      "next_action": "Reconstruct every named child and grandchild from the full will and deeds."
+    },
+    {
+      "name": "William Chappell Sr. and Margaret Cooper",
+      "status": "Weakened Candidate",
+      "reason": "Chronology and location fit, but reconstructed children and available will summaries do not include Mitchell.",
+      "next_action": "Keep dormant unless the full estate packet reveals an omitted heir."
+    },
+    {
+      "name": "Allen Chappell and Crosby Dawson Chappell",
+      "status": "Weakened Candidate",
+      "reason": "The family occupied the correct western Georgia corridor, but published family material does not identify Mitchell as a son or sibling.",
+      "next_action": "Reopen only if a deed, estate distribution or tax record links Mitchell."
+    },
+    {
+      "name": "Edward F. Chappell Branch",
+      "status": "Rejected as Father Candidate",
+      "reason": "Edward was born only a few years before Mitchell's estimated birth and could not reasonably have been Mitchell's father.",
+      "next_action": "Retain only as a neighboring or collateral-family research possibility."
+    }
   ]
 }

@@ -26,6 +26,7 @@
         <a href="#family-lines">Family Lines</a>
         <a href="#research-missions">Missions</a>
         <a href="#brick-walls">Brick Walls</a>
+        <a href="#branch-assessments">Branches</a>
         <a href="#obadiah-case">Obadiah Case</a>
     </nav>
 
@@ -416,6 +417,40 @@
 
     </div>
 
+</section>
+
+
+<section class="branch-assessment-center" id="branch-assessments">
+    <div class="section-heading">
+        <p class="card-label">Lineage Analysis</p>
+        <h2>Candidate & Rejected Branches</h2>
+        <p class="workspace-intro">
+            Every major Chappell branch investigated so far, including why it
+            remains active, has weakened, or has been rejected.
+        </p>
+    </div>
+
+    <div class="branch-assessment-grid">
+        {% for branch in research.branch_assessments %}
+        <article class="branch-assessment-card">
+            <div class="branch-assessment-top">
+                <span class="branch-status">{{ branch.status }}</span>
+            </div>
+
+            <h3>{{ branch.name }}</h3>
+
+            <div class="branch-section">
+                <small>Assessment</small>
+                <p>{{ branch.reason }}</p>
+            </div>
+
+            <div class="branch-section">
+                <small>Next Action</small>
+                <p>{{ branch.next_action }}</p>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
 </section>
 
 </main>
