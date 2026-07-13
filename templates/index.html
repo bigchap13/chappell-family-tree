@@ -6,166 +6,126 @@
         name="viewport"
         content="width=device-width, initial-scale=1"
     >
-    <title>Chappell Family Tree</title>
+    <title>Chappell Family History Explorer</title>
     <link
         rel="stylesheet"
         href="{{ url_for('static', filename='css/style.css') }}"
     >
 </head>
 <body>
-    <header>
-        <p>ChapNetAI History</p>
-        <h1>Chappell Family Tree</h1>
-        <span>Created by Brandon D. Chappell</span>
+    <header class="hero">
+        <p class="eyebrow">ChapNetAI · History</p>
+        <h1>Chappell Family History Explorer</h1>
+        <p class="subtitle">
+            Follow the evidence. Reconstruct the family. Let the tree grow from proof.
+        </p>
+        <span class="creator">Created by Brandon D. Chappell</span>
     </header>
 
     <main>
-        <section class="tree-scene">
-            <svg
-                class="living-tree"
-                viewBox="0 0 800 900"
-                aria-label="Animated Chappell family tree"
-            >
-                <defs>
-                    <linearGradient id="trunkWood" x1="0" y1="1" x2="1" y2="0">
-                        <stop offset="0%" stop-color="#3b2115"/>
-                        <stop offset="45%" stop-color="#714326"/>
-                        <stop offset="100%" stop-color="#a56b3b"/>
-                    </linearGradient>
+        <section class="journey" aria-label="Known family migration path">
+            <div class="journey-line"></div>
 
-                    <linearGradient id="leafGreen" x1="0" y1="1" x2="1" y2="0">
-                        <stop offset="0%" stop-color="#17472f"/>
-                        <stop offset="100%" stop-color="#4f9d68"/>
-                    </linearGradient>
+            <article class="journey-stop research">
+                <span class="stop-dot"></span>
+                <small>Research Goal</small>
+                <strong>England</strong>
+            </article>
 
-                    <filter id="softGlow">
-                        <feGaussianBlur stdDeviation="7" result="blur"/>
-                        <feMerge>
-                            <feMergeNode in="blur"/>
-                            <feMergeNode in="SourceGraphic"/>
-                        </feMerge>
-                    </filter>
-                </defs>
+            <article class="journey-stop family">
+                <span class="stop-dot"></span>
+                <small>Family Confirmed Lead</small>
+                <strong>Americus, Georgia</strong>
+            </article>
 
-                <g class="roots">
-                    <path d="M400 830 C330 835 255 855 170 895"/>
-                    <path d="M400 830 C470 838 555 860 650 895"/>
-                    <path d="M400 835 C365 855 330 878 300 900"/>
-                    <path d="M400 835 C435 855 475 880 510 900"/>
-                </g>
+            <article class="journey-stop family">
+                <span class="stop-dot"></span>
+                <small>Family Confirmed</small>
+                <strong>Walker County, Alabama</strong>
+            </article>
+        </section>
 
-                <g class="tree-form">
-                    <path
-                        class="trunk-shape"
-                        d="M355 850
-                           C365 760 365 680 360 600
-                           C355 520 350 455 365 385
-                           C375 330 385 270 395 205
-                           C400 175 405 150 410 120
-                           C425 205 430 275 435 350
-                           C440 430 445 500 442 585
-                           C438 675 430 770 445 850
-                           Z"
-                    />
+        <section class="family-paths">
+            <article class="path-card chappell-card">
+                <p class="card-label">Family Expedition</p>
+                <h2>Chappell Line</h2>
+                <p>
+                    High Hill Church Cemetery, William Secretariat Chappell,
+                    Americus, Georgia, and the search toward England.
+                </p>
+                <span class="status family-confirmed">Family Confirmed Leads</span>
+            </article>
 
-                    <path
-                        class="branch-shape left-low"
-                        d="M380 655
-                           C320 640 265 600 215 545
-                           C175 500 140 455 110 420
-                           C155 445 205 485 250 520
-                           C300 560 345 590 395 600
-                           Z"
-                    />
+            <article class="path-card key-card">
+                <p class="card-label">Family Expedition</p>
+                <h2>Key Line</h2>
+                <p>
+                    James Edward Key, Claude Key, Rosa Mae Key, and the family
+                    connection to Walker Memorial Gardens.
+                </p>
+                <span class="status family-confirmed">Family Confirmed</span>
+            </article>
 
-                    <path
-                        class="branch-shape right-low"
-                        d="M420 650
-                           C480 630 540 590 590 540
-                           C630 500 665 455 700 420
-                           C655 445 610 480 565 515
-                           C515 555 470 585 410 595
-                           Z"
-                    />
+            <article class="path-card immediate-card">
+                <p class="card-label">Known Family</p>
+                <h2>Immediate Family</h2>
+                <p>
+                    Brandon, Allison, Joshua, Aizlyn, parents, grandparents,
+                    and confirmed relationships.
+                </p>
+                <span class="status family-confirmed">Family Confirmed</span>
+            </article>
+        </section>
 
-                    <path
-                        class="branch-shape left-mid"
-                        d="M385 505
-                           C330 480 290 440 255 390
-                           C225 350 205 315 185 275
-                           C220 305 255 340 290 370
-                           C330 405 365 435 405 450
-                           Z"
-                    />
-
-                    <path
-                        class="branch-shape right-mid"
-                        d="M420 500
-                           C470 475 515 435 550 390
-                           C580 350 605 315 625 275
-                           C590 305 555 340 520 370
-                           C480 405 445 435 405 450
-                           Z"
-                    />
-
-                    <path
-                        class="branch-shape left-high"
-                        d="M400 365
-                           C360 335 330 295 305 250
-                           C285 215 270 180 260 145
-                           C290 180 320 210 350 240
-                           C380 270 405 295 425 320
-                           Z"
-                    />
-
-                    <path
-                        class="branch-shape right-high"
-                        d="M415 355
-                           C450 325 485 285 510 240
-                           C530 205 545 170 555 135
-                           C525 170 495 205 465 235
-                           C440 265 420 295 400 320
-                           Z"
-                    />
-                </g>
-
-                <g class="twig-lines">
-                    <path d="M225 510 C180 480 145 450 120 410"/>
-                    <path d="M275 445 C245 405 225 365 215 320"/>
-                    <path d="M315 360 C285 325 270 290 265 245"/>
-                    <path d="M575 505 C620 475 655 445 680 405"/>
-                    <path d="M525 440 C555 400 575 360 585 315"/>
-                    <path d="M485 350 C515 315 530 280 535 235"/>
-                </g>
-
-                <g class="canopy">
-                    <circle cx="165" cy="385" r="78"/>
-                    <circle cx="245" cy="300" r="92"/>
-                    <circle cx="330" cy="235" r="88"/>
-                    <circle cx="430" cy="210" r="105"/>
-                    <circle cx="525" cy="245" r="92"/>
-                    <circle cx="620" cy="315" r="88"/>
-                    <circle cx="680" cy="395" r="76"/>
-                    <circle cx="305" cy="390" r="102"/>
-                    <circle cx="500" cy="390" r="105"/>
-                </g>
-
-                <g class="light-leaves">
-                    <circle cx="220" cy="320" r="7"/>
-                    <circle cx="300" cy="235" r="6"/>
-                    <circle cx="390" cy="175" r="8"/>
-                    <circle cx="485" cy="230" r="7"/>
-                    <circle cx="575" cy="310" r="6"/>
-                    <circle cx="640" cy="385" r="8"/>
-                </g>
-            </svg>
-
-            <div class="ground"></div>
-
-            <div class="tree-message">
-                <strong>Family Confirmed</strong>
-                <span>Public records will be cited separately.</span>
+        <section class="missions">
+            <div class="section-heading">
+                <p class="card-label">Active Investigation</p>
+                <h2>Research Missions</h2>
             </div>
+
+            <article class="mission">
+                <span class="mission-number">01</span>
+                <div>
+                    <h3>Identify William Secretariat Chappell’s wife</h3>
+                    <p>Name currently unknown.</p>
+                </div>
+                <span class="mission-status open">Open</span>
+            </article>
+
+            <article class="mission">
+                <span class="mission-number">02</span>
+                <div>
+                    <h3>Confirm the Americus migration link</h3>
+                    <p>Locate records connecting the Alabama and Georgia generations.</p>
+                </div>
+                <span class="mission-status research">Researching</span>
+            </article>
+
+            <article class="mission">
+                <span class="mission-number">03</span>
+                <div>
+                    <h3>Trace the Chappell line toward England</h3>
+                    <p>Begin only after the Georgia lineage is documented.</p>
+                </div>
+                <span class="mission-status future">Future</span>
+            </article>
+        </section>
+
+        <section class="cemeteries">
+            <div>
+                <p class="card-label">Known Locations</p>
+                <h2>Cemetery Evidence</h2>
+            </div>
+
+            <article>
+                <strong>High Hill Church Cemetery</strong>
+                <span>Chappell family association</span>
+            </article>
+
+            <article>
+                <strong>Walker Memorial Gardens</strong>
+                <span>Key family and Joshua Edward Chappell association</span>
+            </article>
         </section>
     </main>
 </body>
