@@ -689,3 +689,68 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
+.command-nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 10px;
+    background: rgba(5, 17, 12, 0.94);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(14px);
+}
+
+.command-nav a {
+    flex: 0 0 auto;
+    padding: 10px 14px;
+    border-radius: 999px;
+    color: var(--cream);
+    background: var(--panel-soft);
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.research-overview {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    width: min(1100px, calc(100% - 20px));
+    margin: 16px auto;
+}
+
+.research-overview article {
+    padding: 16px 10px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    text-align: center;
+    background: var(--panel);
+}
+
+.research-overview strong,
+.research-overview span {
+    display: block;
+}
+
+.research-overview strong {
+    color: var(--gold);
+    font-size: 28px;
+}
+
+.research-overview span {
+    margin-top: 5px;
+    color: var(--muted);
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+@media (max-width: 760px) {
+    .research-overview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
