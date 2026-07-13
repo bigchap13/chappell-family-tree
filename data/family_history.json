@@ -191,11 +191,24 @@
       "id": "walker-memorial-gardens",
       "name": "Walker Memorial Gardens",
       "status": "Family Confirmed",
-      "associations": [
-        "joshua-edward-chappell",
-        "james-edward-key",
-        "claude-key",
-        "rosa-mae-key"
+      "individual_associations": [
+        {
+          "person_id": "joshua-edward-chappell",
+          "association": "burial",
+          "status": "Family Confirmed"
+        },
+        {
+          "person_id": "marion-smith",
+          "association": "burial",
+          "burial_name": "Marion Key",
+          "status": "Family Confirmed"
+        }
+      ],
+      "family_line_associations": [
+        {
+          "family_line": "Key",
+          "status": "Family Confirmed"
+        }
       ]
     }
   ],
@@ -214,6 +227,94 @@
       "id": "trace-chappell-england",
       "title": "Trace the Chappell line toward England",
       "status": "Future"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-brandon-legal-name",
+      "subject_id": "brandon-d-chappell",
+      "claim_type": "legal_name",
+      "value": "Brandon Douglas Chappell",
+      "status": "Family Confirmed",
+      "confidence": "High",
+      "evidence_ids": [
+        "evidence-family-testimony-001"
+      ]
+    },
+    {
+      "id": "claim-marion-maiden-name",
+      "subject_id": "marion-smith",
+      "claim_type": "maiden_name",
+      "value": "Marion Smith",
+      "status": "Family Confirmed",
+      "confidence": "High",
+      "evidence_ids": [
+        "evidence-family-testimony-001"
+      ]
+    },
+    {
+      "id": "claim-marion-married-name",
+      "subject_id": "marion-smith",
+      "claim_type": "married_name",
+      "value": "Marion Key",
+      "status": "Family Confirmed",
+      "confidence": "High",
+      "evidence_ids": [
+        "evidence-family-testimony-001"
+      ]
+    },
+    {
+      "id": "claim-marion-burial",
+      "subject_id": "marion-smith",
+      "claim_type": "burial",
+      "value": {
+        "cemetery_id": "walker-memorial-gardens",
+        "burial_name": "Marion Key"
+      },
+      "status": "Family Confirmed",
+      "confidence": "High",
+      "public_record_verification": "Pending",
+      "evidence_ids": [
+        "evidence-family-testimony-001"
+      ]
+    },
+    {
+      "id": "claim-joshua-burial",
+      "subject_id": "joshua-edward-chappell",
+      "claim_type": "burial",
+      "value": {
+        "cemetery_id": "walker-memorial-gardens"
+      },
+      "status": "Family Confirmed",
+      "confidence": "High",
+      "public_record_verification": "Pending",
+      "evidence_ids": [
+        "evidence-family-testimony-001"
+      ]
+    },
+    {
+      "id": "claim-americus-migration",
+      "subject_id": "william-secretariat-chappell",
+      "claim_type": "migration_connection",
+      "value": {
+        "location_id": "americus-georgia"
+      },
+      "status": "Family Confirmed Lead",
+      "confidence": "Unresolved",
+      "public_record_verification": "Pending",
+      "evidence_ids": [
+        "evidence-family-testimony-001"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence-family-testimony-001",
+      "evidence_type": "Family Testimony",
+      "provided_by": "Brandon Douglas Chappell",
+      "status": "Family Confirmed",
+      "citation": null,
+      "public_record": false
     }
   ]
 }
