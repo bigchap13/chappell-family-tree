@@ -754,3 +754,96 @@ main {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.people-command-center{
+    margin-top:16px;
+    padding:22px;
+    border:1px solid var(--border);
+    border-radius:24px;
+    background:var(--panel);
+}
+
+.people-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+}
+
+.person-card{
+    padding:18px;
+    border:1px solid var(--border);
+    border-radius:18px;
+    background:var(--panel-soft);
+}
+
+.person-card h3{
+    margin:0 0 10px;
+}
+
+.person-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.person-meta span,
+.memorial-tag{
+    padding:5px 9px;
+    border-radius:999px;
+    font:800 11px Arial,sans-serif;
+    background:rgba(231,199,124,.15);
+}
+
+.alternate-names{
+    margin-top:14px;
+    display:grid;
+    gap:8px;
+}
+
+.alternate-names strong,
+.alternate-names span{
+    display:block;
+}
+
+.alternate-names strong{
+    color:var(--gold);
+    font:800 11px Arial,sans-serif;
+    text-transform:uppercase;
+}
+
+.relationship-heading{
+    margin-top:26px;
+}
+
+.relationship-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+}
+
+.relationship-card{
+    padding:16px;
+    border:1px solid var(--border);
+    border-radius:18px;
+    background:var(--panel-soft);
+}
+
+.relationship-card strong{
+    color:var(--gold);
+}
+
+.relationship-card p{
+    word-break:break-word;
+}
+
+.relationship-card span{
+    color:var(--muted);
+    font:800 11px Arial,sans-serif;
+}
+
+@media(max-width:760px){
+    .people-grid,
+    .relationship-grid{
+        grid-template-columns:1fr;
+    }
+}

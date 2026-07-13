@@ -286,6 +286,59 @@
             </div>
         </section>
 
-    </main>
+    
+        <section class="people-command-center" id="people-command-center">
+            <div class="section-heading">
+                <p class="card-label">Research Database</p>
+                <h2>People & Relationships</h2>
+                <p class="workspace-intro">
+                    Every known person currently in the genealogy database.
+                </p>
+            </div>
+
+            <div class="people-grid">
+                {% for person in research.people %}
+                <article class="person-card">
+                    <h3>{{ person.name }}</h3>
+
+                    <div class="person-meta">
+                        <span>{{ person.status }}</span>
+
+                        {% if person.memorial %}
+                        <span class="memorial-tag">Memorial</span>
+                        {% endif %}
+                    </div>
+
+                    {% if person.names %}
+                    <div class="alternate-names">
+                        {% for n in person.names %}
+                        <div>
+                            <strong>{{ n.type|title }}</strong>
+                            <span>{{ n.value }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </article>
+                {% endfor %}
+            </div>
+
+            <div class="section-heading relationship-heading">
+                <p class="card-label">Genealogy</p>
+                <h2>Known Relationships</h2>
+            </div>
+
+            <div class="relationship-grid">
+                {% for rel in research.relationships %}
+                <article class="relationship-card">
+                    <strong>{{ rel.type|title }}</strong>
+                    <p>{{ rel.from }} → {{ rel.to }}</p>
+                    <span>{{ rel.status }}</span>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+
+</main>
 </body>
 </html>
