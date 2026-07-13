@@ -580,3 +580,112 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
+.escape-route {
+    margin-top: 18px;
+    padding: 18px;
+    border: 1px dashed rgba(255, 195, 105, 0.5);
+    border-radius: 20px;
+    background: rgba(75, 45, 18, 0.22);
+}
+
+.escape-route-heading {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.escape-route-heading h3 {
+    flex: 1 1 240px;
+    margin: 0;
+    font-size: 24px;
+}
+
+.speculation-badge {
+    padding: 7px 10px;
+    border-radius: 999px;
+    color: #ffd79d;
+    background: rgba(156, 91, 31, 0.28);
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.speculation-warning {
+    margin: 14px 0 0;
+    padding: 13px;
+    border-left: 4px solid #e6a654;
+    color: #ead8bd;
+    background: rgba(105, 58, 22, 0.24);
+    line-height: 1.5;
+}
+
+.route-track {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.route-step {
+    position: relative;
+    padding: 18px 15px 15px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: rgba(11, 31, 23, 0.82);
+}
+
+.route-dot {
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 16px rgba(231, 199, 124, 0.55);
+}
+
+.route-step small {
+    color: var(--gold);
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+}
+
+.route-step h4 {
+    margin: 5px 0 8px;
+    font-size: 19px;
+}
+
+.route-step p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.45;
+}
+
+.route-confidence {
+    display: inline-flex;
+    margin-top: 12px;
+    padding: 5px 8px;
+    border-radius: 999px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.route-confidence.confirmed {
+    color: #a8edc2;
+    background: rgba(62, 142, 91, 0.22);
+}
+
+.route-confidence.speculative {
+    color: #ffd79d;
+    background: rgba(156, 91, 31, 0.24);
+}
+
+@media (max-width: 760px) {
+    .route-track {
+        grid-template-columns: 1fr;
+    }
+}

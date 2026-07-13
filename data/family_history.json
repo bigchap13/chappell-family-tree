@@ -388,7 +388,32 @@
       "Estate inventory and sale bill",
       "Final estate distribution",
       "Guardianship records for minor heirs"
-    ]
+    ],
+    "escape_route": {
+      "title": "Possible Wiley Hunt Escape Route",
+      "status": "Speculation Only",
+      "warning": "This route is entirely speculative. No record currently proves that the Wiley Hunt later found in Mississippi or Louisiana was the same Wiley Hunt accused of killing Obadiah Chappell.",
+      "steps": [
+        {
+          "place": "Harris County, Georgia",
+          "date": "1839",
+          "detail": "Confirmed starting point: Wiley Hunt was accused and reported to have fled from justice.",
+          "confidence": "Confirmed"
+        },
+        {
+          "place": "Attala County, Mississippi",
+          "date": "By 1850",
+          "detail": "Possible matching Wiley Hunt household appears west of Georgia. Identity has not been proven.",
+          "confidence": "Speculative"
+        },
+        {
+          "place": "Louisiana",
+          "date": "Later 1800s",
+          "detail": "Compiled family material may place the same possible Wiley Hunt farther west. This remains unverified.",
+          "confidence": "Speculative"
+        }
+      ]
+    }
   },
   "research_evidence_feed": [
     {

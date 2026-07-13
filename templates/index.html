@@ -205,6 +205,35 @@
                 </article>
             </div>
 
+
+            <section class="escape-route">
+                <div class="escape-route-heading">
+                    <p class="card-label">Unproven Historical Lead</p>
+                    <h3>{{ research.obadiah_investigation.escape_route.title }}</h3>
+                    <span class="speculation-badge">
+                        {{ research.obadiah_investigation.escape_route.status }}
+                    </span>
+                </div>
+
+                <p class="speculation-warning">
+                    {{ research.obadiah_investigation.escape_route.warning }}
+                </p>
+
+                <div class="route-track">
+                    {% for step in research.obadiah_investigation.escape_route.steps %}
+                    <article class="route-step">
+                        <span class="route-dot"></span>
+                        <small>{{ step.date }}</small>
+                        <h4>{{ step.place }}</h4>
+                        <p>{{ step.detail }}</p>
+                        <strong class="route-confidence {{ step.confidence|lower }}">
+                            {{ step.confidence }}
+                        </strong>
+                    </article>
+                    {% endfor %}
+                </div>
+            </section>
+
             <h3 class="feed-title">Research Evidence Feed</h3>
 
             <div class="evidence-feed">
