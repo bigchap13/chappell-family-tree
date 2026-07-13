@@ -486,5 +486,74 @@
       "reason": "Edward was born only a few years before Mitchell's estimated birth and could not reasonably have been Mitchell's father.",
       "next_action": "Retain only as a neighboring or collateral-family research possibility."
     }
+  ],
+  "case_files": [
+    {
+      "id": "case-obadiah-1839",
+      "title": "The Murder of Obadiah Chappell",
+      "priority": "Highest",
+      "status": "Open Historical Investigation",
+      "summary": "Investigate the murder of Obadiah Chappell, identify every surviving court record, reconstruct Wiley Hunt's flight, determine whether Mitchell Jefferson Chappell connects to Obadiah's family.",
+      "known_facts": [
+        "Obadiah Chappell was killed in Harris County, Georgia.",
+        "Wiley Hunt was publicly accused.",
+        "The accused fled.",
+        "A $200 reward was offered by the Governor."
+      ],
+      "speculation": [
+        "The Wiley Hunt later found west of Georgia may be the accused murderer.",
+        "The Mississippi and Louisiana Wiley Hunt records may represent the same individual.",
+        "Mitchell Jefferson Chappell may descend from Obadiah's family, but no record currently proves this."
+      ],
+      "next_targets": [
+        "Harris County probate",
+        "Superior Court minutes",
+        "Estate packet",
+        "Governor correspondence",
+        "Sheriff records",
+        "Grand jury minutes"
+      ]
+    },
+    {
+      "id": "case-mitchell",
+      "title": "Mitchell Jefferson Chappell Parentage",
+      "priority": "Highest",
+      "status": "Open",
+      "summary": "Identify the parents of Mitchell Jefferson Chappell.",
+      "known_facts": [
+        "Mitchell was born about 1810-1811.",
+        "William Secretariat Chappell is believed to be his son."
+      ],
+      "speculation": [
+        "Mitchell may descend from Robert Chappell's Virginia line.",
+        "Mitchell may connect through Obadiah or John."
+      ],
+      "next_targets": [
+        "Tax digests",
+        "Early census",
+        "Probate",
+        "Church records",
+        "Land deeds"
+      ]
+    },
+    {
+      "id": "case-speedwell",
+      "title": "Captain John Chappell",
+      "priority": "Research",
+      "status": "Working",
+      "summary": "Document the claimed connection between Captain John Chappell of the Speedwell and the later Georgia Chappell family.",
+      "known_facts": [
+        "Family tradition identifies Captain John Chappell as the immigrant ancestor."
+      ],
+      "speculation": [
+        "The exact generational connection remains unproven."
+      ],
+      "next_targets": [
+        "English parish records",
+        "Virginia colonial records",
+        "Passenger records",
+        "Published genealogies"
+      ]
+    }
   ]
 }

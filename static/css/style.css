@@ -1017,3 +1017,66 @@ grid-template-columns:1fr;
         grid-template-columns: 1fr;
     }
 }
+
+.casefiles-center{
+margin-top:16px;
+padding:22px;
+border:1px solid var(--border);
+border-radius:24px;
+background:var(--panel);
+}
+
+.casefiles-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:18px;
+margin-top:18px;
+}
+
+.master-case{
+padding:20px;
+border:1px solid var(--border);
+border-radius:20px;
+background:var(--panel-soft);
+}
+
+.master-top{
+display:flex;
+justify-content:space-between;
+gap:10px;
+margin-bottom:12px;
+font:800 11px Arial,sans-serif;
+}
+
+.master-top span{
+padding:6px 10px;
+border-radius:999px;
+background:rgba(231,199,124,.18);
+color:var(--gold);
+}
+
+.master-top small{
+color:var(--muted);
+}
+
+.master-case h4{
+margin:18px 0 8px;
+color:var(--gold);
+}
+
+.master-case ul{
+margin:0;
+padding-left:20px;
+}
+
+.master-case li{
+margin:6px 0;
+line-height:1.5;
+}
+
+.speculation-list{
+border-left:4px solid #c8872f;
+padding-left:18px;
+background:rgba(156,91,31,.12);
+}
+
