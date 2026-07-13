@@ -339,6 +339,85 @@
             </div>
         </section>
 
+
+<section class="claims-center" id="claims-center">
+
+    <div class="section-heading">
+        <p class="card-label">Evidence Database</p>
+        <h2>Claims & Evidence</h2>
+        <p class="workspace-intro">
+            Every genealogy claim is separated from its supporting evidence.
+            Confirmed facts, research leads and speculation remain distinct.
+        </p>
+    </div>
+
+    <div class="claims-grid">
+        {% for claim in research.claims %}
+        <article class="claim-card">
+
+            <div class="claim-top">
+                <span class="claim-status">{{ claim.status }}</span>
+                <span class="claim-confidence">{{ claim.confidence }}</span>
+            </div>
+
+            <h3>{{ claim.claim_type|replace("_"," ")|title }}</h3>
+
+            <p><strong>Subject:</strong> {{ claim.subject_id }}</p>
+
+            <pre class="claim-value">{{ claim.value }}</pre>
+
+            {% if claim.public_record_verification %}
+            <div class="verification">
+                Public Record:
+                {{ claim.public_record_verification }}
+            </div>
+            {% endif %}
+
+        </article>
+        {% endfor %}
+    </div>
+
+    <div class="section-heading evidence-heading">
+        <p class="card-label">Research Sources</p>
+        <h2>Evidence Library</h2>
+    </div>
+
+    <div class="evidence-library">
+
+        {% for item in research.evidence %}
+        <article class="evidence-record">
+
+            <h3>{{ item.id }}</h3>
+
+            <table class="evidence-table">
+                <tr>
+                    <td>Type</td>
+                    <td>{{ item.evidence_type }}</td>
+                </tr>
+
+                <tr>
+                    <td>Status</td>
+                    <td>{{ item.status }}</td>
+                </tr>
+
+                <tr>
+                    <td>Provided By</td>
+                    <td>{{ item.provided_by }}</td>
+                </tr>
+
+                <tr>
+                    <td>Public Record</td>
+                    <td>{{ item.public_record }}</td>
+                </tr>
+            </table>
+
+        </article>
+        {% endfor %}
+
+    </div>
+
+</section>
+
 </main>
 </body>
 </html>
