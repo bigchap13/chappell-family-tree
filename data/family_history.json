@@ -8,8 +8,15 @@
   "people": [
     {
       "id": "brandon-d-chappell",
-      "name": "Brandon D. Chappell",
-      "status": "Family Confirmed"
+      "name": "Brandon Douglas Chappell",
+      "status": "Family Confirmed",
+      "names": [
+        {
+          "type": "legal",
+          "value": "Brandon Douglas Chappell",
+          "status": "Family Confirmed"
+        }
+      ]
     },
     {
       "id": "allison-paige-christopher",
@@ -54,8 +61,20 @@
     },
     {
       "id": "marion-smith",
-      "name": "Marion Smith",
-      "status": "Family Confirmed"
+      "name": "Marion Key",
+      "status": "Family Confirmed",
+      "names": [
+        {
+          "type": "maiden",
+          "value": "Marion Smith",
+          "status": "Family Confirmed"
+        },
+        {
+          "type": "married",
+          "value": "Marion Key",
+          "status": "Family Confirmed"
+        }
+      ]
     },
     {
       "id": "claude-key",
