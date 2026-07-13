@@ -90,6 +90,23 @@
       "id": "william-secretariat-chappell",
       "name": "William Secretariat Chappell",
       "status": "Family Confirmed"
+    },
+    {
+      "id": "argent-catherine-odom-chappell",
+      "name": "Argent Catherine Odom Chappell",
+      "names": [
+        {
+          "type": "alternate",
+          "value": "Argene Catherine Odom",
+          "status": "Public Record Lead"
+        },
+        {
+          "type": "alternate",
+          "value": "Argent Kathryn Odom",
+          "status": "Public Record Lead"
+        }
+      ],
+      "status": "Public Record Lead"
     }
   ],
   "relationships": [
@@ -158,6 +175,13 @@
       "from": "rosa-mae-key",
       "to": "james-edward-key",
       "status": "Family Confirmed"
+    },
+    {
+      "type": "spouse",
+      "from": "william-secretariat-chappell",
+      "to": "argent-catherine-odom-chappell",
+      "status": "Public Record Lead",
+      "confidence": "Strong"
     }
   ],
   "locations": [
@@ -215,8 +239,10 @@
   "research_missions": [
     {
       "id": "identify-william-wife",
-      "title": "Identify William Secretariat Chappell's wife",
-      "status": "Open"
+      "title": "Verify William Securitary Chappell's marriage record",
+      "status": "Evidence Located",
+      "known_spouse": "Argent Catherine Odom Chappell",
+      "note": "Wife identified. Remaining work is to obtain and cite the original marriage or equivalent primary record."
     },
     {
       "id": "confirm-americus-link",
@@ -305,6 +331,16 @@
       "evidence_ids": [
         "evidence-family-testimony-001"
       ]
+    },
+    {
+      "id": "claim-william-spouse",
+      "subject_id": "william-secretariat-chappell",
+      "claim_type": "spouse",
+      "value": "Argent Catherine Odom Chappell",
+      "status": "Public Record Lead",
+      "confidence": "Strong",
+      "public_record_verification": "Primary record pending",
+      "evidence_ids": []
     }
   ],
   "evidence": [
