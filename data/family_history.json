@@ -353,5 +353,75 @@
       "focus": "Census, death, marriage, probate and land records",
       "confidence": "Direct-line ancestor"
     }
+  ],
+  "obadiah_investigation": {
+    "person": "Obadiah Chappell",
+    "case_status": "Active Historical Investigation",
+    "event": "Homicide",
+    "date": "21 September 1839",
+    "location": "Harris County, Georgia",
+    "accused": "Wiley Hunt",
+    "reward": "$200",
+    "confirmed_facts": [
+      "Obadiah Chappell was killed in Harris County, Georgia.",
+      "Wiley Hunt was publicly accused of the killing.",
+      "The accused fled from justice.",
+      "Georgia's governor offered a $200 reward for his capture."
+    ],
+    "unresolved_questions": [
+      "What was the motive?",
+      "Where exactly did the killing occur?",
+      "Was Wiley Hunt ever arrested?",
+      "Was there a trial or indictment?",
+      "Who witnessed the killing?",
+      "Who administered Obadiah's estate?",
+      "Who were all of Obadiah's heirs?",
+      "Was Mitchell Jefferson Chappell connected to this family?"
+    ],
+    "records_needed": [
+      "Harris County Superior Court criminal docket",
+      "Harris County Inferior Court minutes",
+      "Coroner's inquest",
+      "Sheriff warrant and jail records",
+      "Governor's executive correspondence",
+      "Letters of administration",
+      "Estate inventory and sale bill",
+      "Final estate distribution",
+      "Guardianship records for minor heirs"
+    ]
+  },
+  "research_evidence_feed": [
+    {
+      "title": "Governor's reward proclamation",
+      "subject": "Obadiah Chappell homicide",
+      "finding": "Wiley Hunt was accused and a $200 reward was offered after he fled.",
+      "status": "Public Record Verified",
+      "confidence": "High",
+      "source_type": "Contemporary newspaper proclamation"
+    },
+    {
+      "title": "Harris County estate search",
+      "subject": "Obadiah Chappell heirs",
+      "finding": "No complete publicly indexed heir list has yet been located.",
+      "status": "Research In Progress",
+      "confidence": "Unresolved",
+      "source_type": "Probate research"
+    },
+    {
+      "title": "Mitchell connection",
+      "subject": "Mitchell Jefferson Chappell",
+      "finding": "No record currently proves Mitchell was Obadiah's son or heir.",
+      "status": "Research Lead",
+      "confidence": "Unproven",
+      "source_type": "Family reconstruction"
+    },
+    {
+      "title": "Wiley Hunt migration lead",
+      "subject": "Possible accused murderer",
+      "finding": "A Georgia-born Wiley Hunt later appears west of Georgia, but identity is not proven.",
+      "status": "Research Lead",
+      "confidence": "Low",
+      "source_type": "Compiled migration comparison"
+    }
   ]
 }

@@ -454,3 +454,129 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
+.obadiah-case {
+    margin-top: 16px;
+    padding: 22px;
+    border: 1px solid rgba(230, 177, 92, 0.3);
+    border-radius: 24px;
+    background:
+        radial-gradient(circle at top right, rgba(135, 42, 31, 0.2), transparent 42%),
+        var(--panel);
+}
+
+.case-summary,
+.investigation-columns,
+.evidence-feed {
+    display: grid;
+    gap: 12px;
+}
+
+.case-summary {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 18px;
+}
+
+.case-summary article,
+.investigation-columns article,
+.evidence-card {
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: var(--panel-soft);
+}
+
+.case-summary small,
+.case-summary strong {
+    display: block;
+}
+
+.case-summary small {
+    color: var(--gold);
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.case-summary strong {
+    margin-top: 6px;
+    font-size: 18px;
+}
+
+.investigation-columns {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 14px;
+}
+
+.investigation-columns h3,
+.feed-title {
+    margin: 0 0 12px;
+}
+
+.evidence-line {
+    margin: 9px 0;
+    padding-left: 14px;
+    border-left: 3px solid;
+    color: var(--muted);
+    line-height: 1.45;
+}
+
+.verified {
+    border-color: var(--green);
+}
+
+.unresolved {
+    border-color: var(--gold);
+}
+
+.feed-title {
+    margin-top: 22px;
+}
+
+.evidence-feed {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.evidence-card-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.evidence-card-top span {
+    color: var(--gold);
+}
+
+.evidence-card-top small {
+    color: var(--muted);
+}
+
+.evidence-card h3 {
+    margin: 13px 0 7px;
+}
+
+.evidence-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.evidence-card footer {
+    margin-top: 14px;
+    padding: 0;
+    color: var(--green);
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+@media (max-width: 760px) {
+    .case-summary,
+    .investigation-columns,
+    .evidence-feed {
+        grid-template-columns: 1fr;
+    }
+}

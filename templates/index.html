@@ -158,6 +158,70 @@
             </div>
         </section>
 
+    
+        <section class="obadiah-case">
+            <div class="section-heading">
+                <p class="card-label">Featured Historical Case</p>
+                <h2>The Murder of Obadiah Chappell</h2>
+                <p class="workspace-intro">
+                    A dedicated investigation into the 1839 killing,
+                    the accused fugitive, the missing court trail,
+                    and the unresolved family connection.
+                </p>
+            </div>
+
+            <div class="case-summary">
+                <article>
+                    <small>Date</small>
+                    <strong>{{ research.obadiah_investigation.date }}</strong>
+                </article>
+                <article>
+                    <small>Location</small>
+                    <strong>{{ research.obadiah_investigation.location }}</strong>
+                </article>
+                <article>
+                    <small>Accused</small>
+                    <strong>{{ research.obadiah_investigation.accused }}</strong>
+                </article>
+                <article>
+                    <small>Reward</small>
+                    <strong>{{ research.obadiah_investigation.reward }}</strong>
+                </article>
+            </div>
+
+            <div class="investigation-columns">
+                <article>
+                    <h3>Confirmed Facts</h3>
+                    {% for item in research.obadiah_investigation.confirmed_facts %}
+                    <p class="evidence-line verified">{{ item }}</p>
+                    {% endfor %}
+                </article>
+
+                <article>
+                    <h3>Unresolved Questions</h3>
+                    {% for item in research.obadiah_investigation.unresolved_questions %}
+                    <p class="evidence-line unresolved">{{ item }}</p>
+                    {% endfor %}
+                </article>
+            </div>
+
+            <h3 class="feed-title">Research Evidence Feed</h3>
+
+            <div class="evidence-feed">
+                {% for item in research.research_evidence_feed %}
+                <article class="evidence-card">
+                    <div class="evidence-card-top">
+                        <span>{{ item.status }}</span>
+                        <small>{{ item.confidence }}</small>
+                    </div>
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.finding }}</p>
+                    <footer>{{ item.source_type }}</footer>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+
     </main>
 </body>
 </html>
