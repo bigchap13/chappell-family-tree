@@ -1,0 +1,200 @@
+{
+  "project": {
+    "name": "Chappell Family History Explorer",
+    "creator": "Brandon D. Chappell",
+    "category": "History",
+    "parent": "ChapNetAI"
+  },
+  "people": [
+    {
+      "id": "brandon-d-chappell",
+      "name": "Brandon D. Chappell",
+      "status": "Family Confirmed"
+    },
+    {
+      "id": "allison-paige-christopher",
+      "name": "Allison Paige Christopher",
+      "status": "Family Confirmed"
+    },
+    {
+      "id": "joshua-edward-chappell",
+      "name": "Joshua Edward Chappell",
+      "status": "Family Confirmed",
+      "memorial": true
+    },
+    {
+      "id": "aizlyn-emmerson-presley-lewis",
+      "name": "Aizlyn Emmerson Presley Lewis",
+      "status": "Family Confirmed"
+    },
+    {
+      "id": "douglas-edward-chappell",
+      "name": "Douglas Edward Chappell",
+      "status": "Family Confirmed"
+    },
+    {
+      "id": "deanna-joan-key",
+      "name": "DeAnna Joan Key",
+      "status": "Family Confirmed"
+    },
+    {
+      "id": "thomas-sam-chappell",
+      "name": "Thomas E. \"Sam\" Chappell",
+      "status": "Family Confirmed"
+    },
+    {
+      "id": "madie-garner",
+      "name": "Madie Garner",
+      "status": "Family Confirmed"
+    },
+    {
+      "id": "james-edward-key",
+      "name": "James Edward Key",
+      "status": "Family Confirmed"
+    },
+    {
+      "id": "marion-smith",
+      "name": "Marion Smith",
+      "status": "Family Confirmed"
+    },
+    {
+      "id": "claude-key",
+      "name": "Claude Key",
+      "status": "Family Confirmed"
+    },
+    {
+      "id": "rosa-mae-key",
+      "name": "Rosa Mae Key",
+      "status": "Family Confirmed"
+    },
+    {
+      "id": "william-secretariat-chappell",
+      "name": "William Secretariat Chappell",
+      "status": "Family Confirmed"
+    }
+  ],
+  "relationships": [
+    {
+      "type": "parent",
+      "from": "brandon-d-chappell",
+      "to": "allison-paige-christopher",
+      "status": "Family Confirmed"
+    },
+    {
+      "type": "sibling",
+      "from": "brandon-d-chappell",
+      "to": "joshua-edward-chappell",
+      "status": "Family Confirmed"
+    },
+    {
+      "type": "parent",
+      "from": "joshua-edward-chappell",
+      "to": "aizlyn-emmerson-presley-lewis",
+      "status": "Family Confirmed"
+    },
+    {
+      "type": "parent",
+      "from": "douglas-edward-chappell",
+      "to": "brandon-d-chappell",
+      "status": "Family Confirmed"
+    },
+    {
+      "type": "parent",
+      "from": "deanna-joan-key",
+      "to": "brandon-d-chappell",
+      "status": "Family Confirmed"
+    },
+    {
+      "type": "parent",
+      "from": "thomas-sam-chappell",
+      "to": "douglas-edward-chappell",
+      "status": "Family Confirmed"
+    },
+    {
+      "type": "parent",
+      "from": "madie-garner",
+      "to": "douglas-edward-chappell",
+      "status": "Family Confirmed"
+    },
+    {
+      "type": "parent",
+      "from": "james-edward-key",
+      "to": "deanna-joan-key",
+      "status": "Family Confirmed"
+    },
+    {
+      "type": "parent",
+      "from": "marion-smith",
+      "to": "deanna-joan-key",
+      "status": "Family Confirmed"
+    },
+    {
+      "type": "parent",
+      "from": "claude-key",
+      "to": "james-edward-key",
+      "status": "Family Confirmed"
+    },
+    {
+      "type": "parent",
+      "from": "rosa-mae-key",
+      "to": "james-edward-key",
+      "status": "Family Confirmed"
+    }
+  ],
+  "locations": [
+    {
+      "id": "walker-county-alabama",
+      "name": "Walker County, Alabama",
+      "status": "Family Confirmed"
+    },
+    {
+      "id": "americus-georgia",
+      "name": "Americus, Georgia",
+      "status": "Family Confirmed Lead"
+    },
+    {
+      "id": "england",
+      "name": "England",
+      "status": "Research Goal"
+    }
+  ],
+  "cemeteries": [
+    {
+      "id": "high-hill-church-cemetery",
+      "name": "High Hill Church Cemetery",
+      "status": "Family Confirmed",
+      "associations": [
+        "thomas-sam-chappell",
+        "william-secretariat-chappell"
+      ]
+    },
+    {
+      "id": "walker-memorial-gardens",
+      "name": "Walker Memorial Gardens",
+      "status": "Family Confirmed",
+      "associations": [
+        "joshua-edward-chappell",
+        "james-edward-key",
+        "claude-key",
+        "rosa-mae-key"
+      ]
+    }
+  ],
+  "research_missions": [
+    {
+      "id": "identify-william-wife",
+      "title": "Identify William Secretariat Chappell's wife",
+      "status": "Open"
+    },
+    {
+      "id": "confirm-americus-link",
+      "title": "Confirm the Americus migration link",
+      "status": "Researching"
+    },
+    {
+      "id": "trace-chappell-england",
+      "title": "Trace the Chappell line toward England",
+      "status": "Future"
+    }
+  ]
+}

@@ -1,11 +1,25 @@
-from flask import Flask, render_template
+from flask import Flask, jsonify, render_template
+from pathlib import Path
+import json
 
 app = Flask(__name__)
+
+
+DATA_FILE = Path(__file__).parent / "data" / "family_history.json"
+
+
+def load_family_history():
+    return json.loads(DATA_FILE.read_text())
 
 
 @app.get("/")
 def home():
     return render_template("index.html")
+
+
+@app.get("/api/research")
+def research():
+    return jsonify(load_family_history())
 
 
 @app.get("/api/health")
