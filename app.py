@@ -14,7 +14,7 @@ def load_family_history():
 
 @app.get("/")
 def home():
-    return render_template("index.html")
+    return render_template("index.html", research=load_family_history())
 
 
 @app.get("/api/research")

@@ -127,6 +127,37 @@
                 <span>Key family and Joshua Edward Chappell association</span>
             </article>
         </section>
+    
+        <section class="brick-wall-workspace">
+            <div class="section-heading">
+                <p class="card-label">Genealogy Investigation</p>
+                <h2>Brick Wall Workspace</h2>
+                <p class="workspace-intro">
+                    Active leads, unresolved relationships, and the records
+                    most likely to break the Chappell lineage open.
+                </p>
+            </div>
+
+            <div class="case-grid">
+                {% for case in research.brick_walls %}
+                <article class="case-card">
+                    <div class="case-top">
+                        <span class="case-status">{{ case.status }}</span>
+                        <span class="case-confidence">{{ case.confidence }}</span>
+                    </div>
+
+                    <h3>{{ case.person }}</h3>
+                    <p class="case-question">{{ case.question }}</p>
+
+                    <div class="case-focus">
+                        <small>Current search focus</small>
+                        <strong>{{ case.focus }}</strong>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+
     </main>
 </body>
 </html>

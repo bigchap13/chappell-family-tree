@@ -316,5 +316,42 @@
       "citation": null,
       "public_record": false
     }
+  ],
+  "brick_walls": [
+    {
+      "person": "Mitchell Jefferson Chappell",
+      "status": "Unresolved",
+      "question": "Who were his parents?",
+      "focus": "Georgia, Alabama, Virginia, South Carolina",
+      "confidence": "Compiled claim only"
+    },
+    {
+      "person": "Obadiah Chappell",
+      "status": "Active Lead",
+      "question": "Did his 1839 estate name Mitchell or other heirs?",
+      "focus": "Harris County probate, guardianship and murder records",
+      "confidence": "Strong regional candidate"
+    },
+    {
+      "person": "Robert Chappell",
+      "status": "Active Lead",
+      "question": "Which descendant branch leads toward Mitchell?",
+      "focus": "Virginia-to-Georgia descendants",
+      "confidence": "Documented historical family"
+    },
+    {
+      "person": "John Chappell",
+      "status": "Researching",
+      "question": "Does his Monroe County branch connect to Mitchell?",
+      "focus": "Will, descendants, deeds and probate",
+      "confidence": "Possible branch"
+    },
+    {
+      "person": "William Securitary Chappell",
+      "status": "Bridge Person",
+      "question": "Can an original record verify his reported parents?",
+      "focus": "Census, death, marriage, probate and land records",
+      "confidence": "Direct-line ancestor"
+    }
   ]
 }
